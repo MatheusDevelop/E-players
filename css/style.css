@@ -1,8 +1,8 @@
 :root{
-    --background: #1E1C21;
+    --backgroud: #1e1c21;
     --pink: #FC1E8B;
-    --purple: #7278C3;
-    --blue: #00A8DC;
+    --purple: #7278c3;
+    --blue: #00a8dc;
 }
 
 *{
@@ -11,8 +11,8 @@
 }
 
 body{
-    background-color: var(--background);
-    font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    background-color: var(--backgroud);
+    font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
 
@@ -37,7 +37,6 @@ a{
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 header .container{
     display: flex;
@@ -64,7 +63,6 @@ header img{
     margin-right: 100px;
 }
 
-
 .partidas{
     text-align: center;
     width: 100%;
@@ -79,6 +77,7 @@ header img{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#422c5a', endColorstr='#100f11', GradientType=0 );
 }
 
+
 .partidas .container{
     display: flex;
     justify-content: space-between;
@@ -91,7 +90,7 @@ header img{
 }
 
 .partida img{
-    width: 40px;
+    width: 30px;
     padding: 0 10px;
 }
 
@@ -129,6 +128,7 @@ header img{
     padding: 30px 0;
 }
 
+
 .ligas img{
     height: 120px;
 }
@@ -143,11 +143,9 @@ header img{
     text-transform: uppercase;
     line-height: 40px;
 }
-
 .ligas div{
     margin-bottom: 35px;
 }
-
 
 .sobre_fundo{
     background-image: url("../img/Teams/T6.jpg");
@@ -155,17 +153,22 @@ header img{
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    min-height: 500px;
-    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);  
+    min-height: 600px;
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+
 .sobre_fundo_filtro{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: rgba(114, 120, 195, 0.5);
+    background-color: rgba(114, 120, 195, 0.514);
 }
+
 .sobre{
     position: relative;
     display: flex;
@@ -174,20 +177,19 @@ header img{
     position: absolute;
     z-index: 99;
     top: -20px;
-    left: 100px;
+    left: 280px;
     width: 100%;
-    max-width: 35%;  
+    max-width: 549px;
 }
 .texto_sobre{
     width: 40%;
-    margin-right: 120px;
+    margin-right: 100px;
     text-align: right;
-    text-shadow: 0px 3px 3px #000;
+    text-shadow: 0px 3px 5px #000;
 }
 .texto_sobre h2{
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
-
 
 .content{
     display: flex;
@@ -196,22 +198,21 @@ header img{
 }
 
 .content section{
-    width: 70%;
+    width: 60%;
 }
-
 
 .card{
     width: 100%;
     margin-bottom: 2em;
-    box-shadow: 0px 3px 10px #000;
     display: flex;
+    box-shadow: 0px 3px 10px #000;
     justify-content: flex-start;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(30,28,33,1) 30%, rgba(30,28,33,1) 100%);
 }
 
 .card img{
-    width: 220px;
+    width: 260px;
     height: 220px;
     object-fit: cover;
 }
@@ -221,36 +222,36 @@ header img{
 }
 
 .card div:hover{
-    background-color: #422c5a;
+    color: var(--backgroud);
+    background-color: var(--blue);
     transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in;
 }
 
 .content h3{
     text-transform: uppercase;
-    padding: 1em 0;
+    padding: 1em 0px;
     font-size: 1.8em;
-
 }
 
 .content article{
     width: 25%;
+
 }
 
-.resultados_box{
-    padding: 2em;
+.resultado_box{
+    padding: 1em 2em;
     box-shadow: 0px 3px 10px #000;
+}
+
+.resultado{
+    text-align: center;
 }
 
 .resultado div{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-}
-
-.resultado{
-    text-align: center;
-    margin-bottom: 1.2em;
 }
 
 .resultado img{
@@ -260,78 +261,161 @@ header img{
 .resultado p{
     font-size: 1.7em;
     margin: 0.1em 0;
+    padding: 18.6px;
 }
 
 footer{
-    background-color: black;
-    box-shadow: 0px -6px 10px #000;
+    background-color: #000;
+    box-shadow: 0px -6px 10px black;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(30,28,33,1) 30%, rgba(30,28,33,1) 100%);
-    min-height: 250px;
+    min-height:  250px;
     padding: 2em 0;
 }
+
 footer .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 footer nav h3{
-    font-size: 1.6em;
+    font-size: 1.5em;
     color: #646464;
     margin-bottom: 1em;
 }
+
 footer nav ul{
     list-style-type: none;
 }
+
 footer nav li{
-   margin-bottom: 0.4em;
+    margin-bottom: 0.4em;
 }
+
+
 footer nav a:hover{
     border-bottom: solid 1px var(--purple);
 }
 
-/* Icones rodape */
+/* Icones Rodape */
 
 .sociais{
     display: flex;
     justify-content: space-between;
     font-size: 3em;
     margin-top: 0.5em;
-    
 }
 
 .sociais i{
-    background: linear-gradient(to bottom, rgba(252,30,137,1) 0%, rgba(114,119,195,1) 100%);
+    background: linear-gradient(to top, rgba(252,30,137,1) 0%, rgba(114,119,195,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
 }
 
-/* Inicia configuração form do rodapé */
+
+/*Inicia configuração form do rodapé */
+
 footer form{
     display: flex;
     flex-direction: column;
 }
+
 footer form label{
-    font-size: 2em;
+    font-size: 1.7em;
     font-weight: bold;
     color: #646464;
     margin-bottom: 0.3em;
+
 }
+
 footer form input{
-    height: 2em;
-    width: 15em;
+    height: 1.99em;
+    width: 14em;
     margin-right: -5px;
     outline: none;
     padding: 1px;
 }
+
 .btn{
-    color:white;
-    border:none;
+    color: white;
+    border: none;
     text-decoration: none;
-    padding: 0.65em 2em;
+    padding: 0.66em 1em;
     cursor: pointer;
 }
+
 footer p{
     text-align: center;
-    color: #6F6F6F;
+    border: none;
+    color: #646464;
 }
+
+/* Inicia página cadastro */
+.banner_cadastro{
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/Topo\ cadastro.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.banner_cadastro{
+    font-size: 1.7em;
+    text-transform: uppercase;
+}
+/*Formulário*/
+.form_cadastro{
+    width: 100%;
+    max-width: 400px;
+    margin:10em auto;
+    box-shadow: 4px 4px 20px #000, -3px -6px 24px #7278c3 ;
+    padding: 1.5em;
+    border-radius: 5px;
+}
+
+.campo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.7em;
+}
+.campo label{
+    text-transform: uppercase;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+select{
+    width: 50%;
+    background-color: #1e1c21;
+    border: none;
+    outline: none;
+    border-bottom: solid 1px #7278c3 ;
+    color: #ccc;
+}
+.campo input:focus{
+    background-color: #2f2c33;
+}
+
+.campo fieldset{
+    border: none;
+}
+.campo fieldset label{
+    margin: 2em 1em 1em 0;
+}
+.termos{
+    justify-content: unset;
+    align-items: center;
+}
+.termos input{
+    margin-right: 0.5em;
+}
+.form_cadastro .campo:nth-child(10) button{
+    margin: auto;
+}
+
+
