@@ -14,14 +14,17 @@
 
     <header>
         <div class="container">
-            <a href="index.html" title="Acessar a página inicial do site">
-                <img src="img/Logo.svg" alt="Logo do site E-Players">
-            </a>
-            <nav>
+            <div class="header__mobile">
+                <i class="fas fa-bars" onClick="toggle()"></i>
+                <a href="index.html" title="Acessar a página inicial do site">
+                    <img src="img/Logo.svg" alt="Logo do site E-Players">
+                </a>
+            </div>
+            <nav id="menu" >
                 <ul>
                     <li><a href="index.html" title="Acessar página inicial">início</a></li>
                     <li><a href="#sobre" title="Acessar sessão sobre o projeto">sobre</a></li>
-                    <li><a href="#noticias" title="Acessar sessão de notícias">notíias</a></li>
+                    <li><a href="#noticias" title="Acessar sessão de notícias">notícias</a></li>
                     <li><a href="cadastro.html" title="Acessar página de Cadastro">cadastre-se</a></li>
                     <li><a href="login.html" title="Acessar página de Login">login</a></li>
                     <li>
@@ -291,6 +294,17 @@
             © COPYRIGHT - Todos os direitos reservados - SENAI de Informática  E-Sports 
         </p>
     </footer>
+    <script>
+        function toggle(){
+            let el = document.getElementById("menu");
+            if(el.style.display == 'block'){
+                el.style.display="none";
+            }else{
+                el.style.display="block"
+            }
+        }
+
+    </script>
 
 </body>
 
