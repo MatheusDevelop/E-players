@@ -424,6 +424,11 @@ select{
     justify-content: space-between;
     align-items: flex-end;
 }
+.ligas_imagens{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
 
 @media (max-width: 800px){
 
@@ -508,12 +513,71 @@ header .fa-bars{
         padding:1.5em 1em;
     }
     header .container div a {
-        margin-left: 6em;
+        margin-left: 3em;
     }
     .header__mobile{
         display: flex;
-        justify-content: space-between;
+        justify-content:space-around;
+        align-items: center;
     }
+    .partidas .container{
+        width:97%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .em_andamento{
+        width: 37%;
+        align-self: flex-start;
+        margin-left: 2em;
+    }
+    .proximas_partidas{
+        width: 90%;
+    }
+
+    .ligas{
+        flex-direction: column;
+    }
+    .ligas div:nth-child(1){
+        display: flex;
+    }
+    .ligas h4,.ligas h3{
+        font-size: 2em;
+        line-height: 20px;
+        margin-right: 0.5em;
+    }
+    .sobre img{
+        display: none;
+    }
+    .texto_sobre{
+        width: 90%;
+        margin-right: 30px;
+    }
+     .content{
+         flex-direction: column;
+         width: 95%;
+     }
+     .content article{
+         width: 100%;
+     }
+     .content sectopm{
+         width: 90%;
+         margin:auto;
+     }
+     .card{
+         flex-direction: column;
+         margin-bottom: 1em;
+     }
+     .card img{
+         margin-left: 0px;
+         width: 100%;
+     }
+     .card div{
+         padding:1em;
+     }
+
+     footer .container div{
+         margin-bottom: 1em;
+     }
 }
 
 
